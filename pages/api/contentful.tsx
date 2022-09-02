@@ -15,7 +15,8 @@ export default async function handler(
     res: NextApiResponse
 ){
     const entries = await client.getEntries({
-        content_type: "fieis"
+        content_type: "fieis",
+        order: "-sys.createdAt, sys.id"
     })
     console.log(entries.items)
 

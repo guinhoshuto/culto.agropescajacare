@@ -51,7 +51,6 @@ h1{
 
 .alive, .dead{
   border-radius: 10px;
-  display:block;
 }
 
 @media (prefers-color-scheme: dark) {

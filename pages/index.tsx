@@ -23,9 +23,14 @@ const Home: NextPage = ({members}: any) => {
         <div className={styles.members}>
           {members.map((member: any, index: number) => (
             <div key={index} className={styles.member}> 
-              <div className={styles.overlay}>
-                <Image className={member.fields.alive ? 'alive' : 'dead'} src={`https:${member.fields.profilePicture.fields.file.url}`} alt={member.fields.nome} width={200} height={200} />
-              </div>
+              <Image 
+                className={member.fields.alive ? 'alive' : 'dead'} 
+                src={`https:${member.fields.profilePicture.fields.file.url}`} 
+                alt={member.fields.nome} 
+                width={200} 
+                height={200} 
+                layout="fixed"
+                />
               <h3 className={styles.memberName}>
               {member.fields.nome}
               </h3>
@@ -33,9 +38,6 @@ const Home: NextPage = ({members}: any) => {
           ))}
 
         </div>
-        {/* {members.map(member => {
-          <div>{member}</div>
-        })} */}
     </div>
   )
 }
@@ -44,7 +46,6 @@ export default Home
 
 export async function getServerSideProps(){
   const res = await axios.get("https://culto.agropescajacare.com.br/api/contentful");
-  // const res = await axios.get("http://feras-leaderboards.herokuapp.com/cubot/preceitos")
   const arr = JSON.parse(JSON.stringify(res.data.members))
 
   return{
