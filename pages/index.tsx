@@ -20,11 +20,19 @@ const Home: NextPage = ({members}: any) => {
         </div>
       </header>
         <h1>MEMBROS</h1>
-        <ul>
-          {members.map((member: any) => {
-            <li>oi {member}</li>
-          })}
-        </ul>
+        <div className={styles.members}>
+          {members.map((member: any, index: number) => (
+            <div key={index} className={styles.member}> 
+              <div className={styles.overlay}>
+                <Image className={member.fields.alive ? 'alive' : 'dead'} src={`https:${member.fields.profilePicture.fields.file.url}`} alt={member.fields.nome} width={200} height={200} />
+              </div>
+              <h3 className={styles.memberName}>
+              {member.fields.nome}
+              </h3>
+            </div>
+          ))}
+
+        </div>
         {/* {members.map(member => {
           <div>{member}</div>
         })} */}
@@ -35,12 +43,13 @@ const Home: NextPage = ({members}: any) => {
 export default Home
 
 export async function getServerSideProps(){
-  const res = await fetch("https://culto.agropescajacare.com.br/api/contentful");
-  const json = await res.json();
+  const res = await axios.get("https://culto.agropescajacare.com.br/api/contentful");
+  // const res = await axios.get("http://feras-leaderboards.herokuapp.com/cubot/preceitos")
+  const arr = JSON.parse(JSON.stringify(res.data.members))
 
   return{
     props: {
-      members: json
+      members: arr
     }
   }
 }

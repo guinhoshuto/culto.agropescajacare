@@ -6,6 +6,39 @@
   height: 650px;
 }
 
+.members{
+  display:flex;
+  width: 70%;
+  margin: auto
+}
+
+.member{
+  text-align: center;
+  flex-basis: 16%;
+  margin: 30px 50px;
+  border-radius: 10px;
+}
+
+
+.overlay{
+  position: relative;
+  display: inline-block;
+}
+
+.overlay::after{
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(20,20, 20,0.5508404045211834) 16%, rgba(255,255,255,0) 100%) 
+}
+
+/* .memberName{
+  text-align: center;
+} */
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
