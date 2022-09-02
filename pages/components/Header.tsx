@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export const Header:any = () => {
+const Header:any = () => {
     return(
       <header>
         <div>
@@ -16,3 +16,5 @@ export const Header:any = () => {
       </header>
     )
 }
+
+export default Header
