@@ -8,18 +8,6 @@ const Home: NextPage = ({members}: any) => {
   return (
     <div>
       <Header />
-      {/* <header className={styles.banner}>
-        <div>
-          <nav>
-            <ul>
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/lore">Lore</Link></li>
-              <li><Link href="/galeria">Galeria</Link></li>
-              <li><Link href="/clips">Clips</Link></li>
-            </ul>
-          </nav>
-        </div>
-      </header> */}
         <h1>MEMBROS</h1>
         <div className={styles.members}>
           {members.map((member: any, index: number) => (
@@ -28,8 +16,8 @@ const Home: NextPage = ({members}: any) => {
                 className={member.fields.alive ? 'alive' : 'dead'} 
                 src={`https:${member.fields.profilePicture.fields.file.url}`} 
                 alt={member.fields.nome} 
-                width={200} 
-                height={200} 
+                width={170} 
+                height={170} 
                 layout="fixed"
                 />
               <h3 className={styles.memberName}>
