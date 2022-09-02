@@ -16,7 +16,7 @@ export default async function handler(
 ){
     const entries = await client.getEntries({
         content_type: "fieis",
-        order: "-sys.createdAt, sys.id"
+        // order: "-sys.createdAt, sys.id"
     })
     console.log(entries.items)
 
