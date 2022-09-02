@@ -35,7 +35,8 @@ export default Home
 
 export async function getServerSideProps(){
   const res = await axios.get("https://culto.agropescajacare.com.br/api/contentful");
-  const arr = JSON.parse(JSON.stringify(res.data.members))
+  const arr = JSON.parse(JSON.stringify(res.data.members));
+  arr.reverse();
 
   return{
     props: {
