@@ -1,8 +1,12 @@
 import type { NextPage } from 'next'
+import { Header } from './components/Header'
 
 const Lore: NextPage = () => {
     return(
-        <div>Não fiz</div>
+        <div>
+            <Header />
+            Não fiz
+        </div>
     )
 }
 

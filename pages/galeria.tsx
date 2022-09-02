@@ -1,8 +1,12 @@
 import type { NextPage } from 'next'
+import { Header } from './components/Header'
 
 const Galeria: NextPage = () => {
     return(
-        <div>ainda não fiz</div>
+        <div>
+            <Header />
+            ainda não fiz
+        </div>
     )
 }
 

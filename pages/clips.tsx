@@ -1,8 +1,12 @@
 import type { NextPage } from 'next'
+import { Header } from './components/Header'
 
 const Clips: NextPage = () => {
     return(
-        <div>oi</div>
+        <div>
+            <Header />
+            oi
+        </div>
     )
 }
 
