@@ -7,7 +7,6 @@ import axios from 'axios'
 const Home: NextPage = ({members}: any) => {
   return (
     <div>
-      {members}
       <header className={styles.banner}>
         <div>
           <nav>
@@ -21,19 +20,27 @@ const Home: NextPage = ({members}: any) => {
         </div>
       </header>
         <h1>MEMBROS</h1>
+        <ul>
+          {members.map((member: any) => {
+            <li>oi {member}</li>
+          })}
+        </ul>
+        {/* {members.map(member => {
+          <div>{member}</div>
+        })} */}
     </div>
   )
 }
 
 export default Home
 
-export async function getMembers(){
-  const res = await axios.get("https://culto.agropescajacare.com.br/api/contentful");
-  // const json = await res.json();
+export async function getServerSideProps(){
+  const res = await fetch("https://culto.agropescajacare.com.br/api/contentful");
+  const json = await res.json();
 
   return{
     props: {
-      members: res
+      members: json
     }
   }
 }

@@ -19,5 +19,5 @@ export default async function handler(
     })
     console.log(entries.items)
 
-    res.status(200).json(entries.items)
+    res.status(200).json({members: entries.items})
 }
