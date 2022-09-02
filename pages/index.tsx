@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import axios from 'axios'
 
-const Home: NextPage = ({members}) => {
+const Home: NextPage = ({members}: any) => {
   return (
     <div>
       {members}
