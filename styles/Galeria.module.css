@@ -1,0 +1,14 @@
+.galeria{
+    width: 90%;
+    margin: auto;
+    display:flex;
+    flex:1;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+.foto{
+    display: inline-block;
+    margin: 30px 10px
+}
