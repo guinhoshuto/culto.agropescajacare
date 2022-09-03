@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@bentoproject/lightbox-gallery": "^1.2208172101.0",
     "axios": "^0.27.2",
     "contentful": "^9.1.34",
     "next": "12.2.5",

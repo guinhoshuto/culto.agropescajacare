@@ -12,3 +12,7 @@
     display: inline-block;
     margin: 30px 10px
 }
+
+.foto:hover{
+    box-shadow: 0 0 20px #f9000040
+}

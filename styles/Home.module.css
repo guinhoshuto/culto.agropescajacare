@@ -22,11 +22,9 @@
   /* flex-basis: 16%; */
   margin: 30px 30px;
   border-radius: 10px;
+  padding:10px
 }
 
-.member img:hover{
-  box-shadow: rgba(255,0,0,0.9);
-}
 
 /* .overlay{
   position: relative;

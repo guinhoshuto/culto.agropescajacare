@@ -3,6 +3,10 @@ import Image from 'next/image'
 import axios from 'axios'
 import styles from '../styles/Galeria.module.css'
 import Header from './components/Header'
+// import {
+//   BentoLightboxGalleryProvider,
+//   WithBentoLightboxGallery,
+// } from '@bentoproject/lightbox-gallery/react';
 
 const Galeria: NextPage = ({galeria}: any) => {
     return(
