@@ -1,0 +1,41 @@
+.modal{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background: #00000070;
+}
+
+.modalContent{
+    position: relative;
+    /* box-shadow: 0 0 15px #f9000040; */
+    /* background-color: #fefefe; */
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.row{
+    flex: 1;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foto{
+    display: inline-block;
+    margin: 30px 10px;
+    border-radius: 5px
+}
+
+.foto:hover{
+    box-shadow: 0 0 20px #f9000040
+}
