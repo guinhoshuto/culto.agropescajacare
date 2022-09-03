@@ -9,7 +9,7 @@ const Galeria: NextPage = ({galeria}: any) => {
             <Header />
             <div>
                 {galeria.includes.Asset.map((images: any, index: number) => (
-                    <div key={index}><Image src={images.fields.file.url} alt="galeria" /></div>
+                    <div key={index}><Image src={`https://${images.fields.file.url}`} alt="galeria" height={300} width={400} /></div>
                 ))}
             </div>
         </div>
@@ -21,7 +21,6 @@ export default Galeria
 export async function getServerSideProps(){
   const res = await axios.get("https://culto.agropescajacare.com.br/api/galeria");
   const arr = JSON.parse(JSON.stringify(res.data.galeria));
-  arr.reverse();
 
   return{
     props: {

@@ -13,7 +13,7 @@ export default async function handler(
     res: NextApiResponse
 ){
     
-    const galeria = await client.getEntries('6wctVRNvKO4hZPBRmcCWdH')
+    const galeria = await client.getEntry('6wctVRNvKO4hZPBRmcCWdH')
 
     res.status(200).json({galeria: galeria})
 }
