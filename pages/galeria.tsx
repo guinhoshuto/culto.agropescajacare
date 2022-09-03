@@ -8,8 +8,8 @@ const Galeria: NextPage = ({galeria}: any) => {
         <div>
             <Header />
             <div>
-                {galeria.includes.Asset.map((images: any, index: number) => (
-                    <div key={index}><Image src={`https://${images.fields.file.url}`} alt="galeria" height={300} width={400} /></div>
+                {galeria.fields.imagens.map((images: any, index: number) => (
+                    <div key={index}><Image src={`https://${images.fields.file.url}`} alt="galeria" height={300} width={500} layout="fixed" /></div>
                 ))}
             </div>
         </div>
