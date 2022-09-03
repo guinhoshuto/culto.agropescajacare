@@ -11,7 +11,7 @@ const Galeria: NextPage = ({galeria}: any) => {
             <h1>GALERIA</h1>
             <div className={styles.galeria}>
                 {galeria.fields.imagens.map((images: any, index: number) => (
-                    <div key={index} className={styles.foto}><Image src={`https://${images.fields.file.url}`} alt="galeria" height={300} width={500} layout="fixed" /></div>
+                    <div key={index} className={styles.foto}><Image src={`https:${images.fields.file.url}`} alt="galeria" height={300} width={500} layout="fixed" /></div>
                 ))}
             </div>
         </div>
