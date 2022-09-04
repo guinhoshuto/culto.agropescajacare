@@ -14,7 +14,7 @@ const Clips: NextPage = () => {
             <div className={styles.container}>
                 <iframe
                     title="preview"
-                    src={`https://player.twitch.tv/?collection=ex8rmLoFBhd32Q&parent=localhost&parent=culto.agropescajacare.com.br`}
+                    src={`https://player.twitch.tv/?collection=NFS57ZqPERdkxQ&parent=localhost&parent=culto.agropescajacare.com.br`}
                     // height="100%"
                     // width="50%"
                      height="720"
