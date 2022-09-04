@@ -15,6 +15,7 @@
     position: relative;
     /* box-shadow: 0 0 15px #f9000040; */
     /* background-color: #fefefe; */
+    text-align: center;
     margin: auto;
     padding: 0;
     width: 90%;
@@ -33,9 +34,10 @@
 .foto{
     display: inline-block;
     margin: 30px 10px;
-    border-radius: 5px
+    border-radius: 5px;
+    text-align: center;
 }
 
 .foto:hover{
-    box-shadow: 0 0 20px #f9000040
+    box-shadow: 0 0 20px #f9000040;
 }
