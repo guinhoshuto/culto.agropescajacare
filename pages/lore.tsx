@@ -11,7 +11,7 @@ const Lore: NextPage = ({thread}: any) => {
             {/* {console.log(typeof thread)} */}
             <div className={styles.lore}>
                 {thread.map((comment: any, index: number) => (
-                    <div className={styles.timeline} key={index}><Tweet tweet={comment} /></div>
+                    index !=  0 && <div className={styles.timeline} key={index}><Tweet tweet={comment} /></div>
                 ))}
             </div>
         </div>
