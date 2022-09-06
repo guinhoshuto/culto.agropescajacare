@@ -8,10 +8,10 @@ const Lore: NextPage = ({thread}: any) => {
         <div>
             <Header />
             <h1>LORE</h1>
-            {console.log(typeof thread)}
+            {/* {console.log(typeof thread)} */}
             <div className={styles.lore}>
-                {thread.map((tweet: any, index: number) => (
-                    <div className={styles.timeline} key={index}><Tweet tweet={tweet} /></div>
+                {thread.map((comment: any, index: number) => (
+                    <div className={styles.timeline} key={index}><Tweet tweet={comment} /></div>
                 ))}
             </div>
         </div>
