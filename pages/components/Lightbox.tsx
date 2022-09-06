@@ -16,7 +16,7 @@ const Lightbox = ({images}: any) => {
 
     let slideIndex = 1;
     function currentSlide(n: number): void{
-        showSlide(slideIndex = n);
+        showSlide(slideIndex = n+1);
     }
 
     function showSlide(n: number): void{
