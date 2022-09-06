@@ -22,6 +22,7 @@ export default Lore
 export async function getServerSideProps(){
     const res = await axios.get("https://culto.agropescajacare.com.br/api/twitter");
     const arr = JSON.parse(JSON.stringify(res.data.thread));
+    console.log(arr)
     arr.reverse()
 
     return{
