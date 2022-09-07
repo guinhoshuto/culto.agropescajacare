@@ -17,8 +17,7 @@ const Clips: NextPage = () => {
                     src={`https://player.twitch.tv/?collection=NFS57ZqPERdkxQ&parent=localhost&parent=culto.agropescajacare.com.br`}
                     // height="100%"
                     // width="50%"
-                     height="720"
-                    width="1280"
+                    className={styles.twitch}
                     allowFullScreen>
                 </iframe>
             </div>

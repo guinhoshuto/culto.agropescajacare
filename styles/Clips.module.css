@@ -7,3 +7,20 @@
 .container iframe{
     margin: auto;
 }
+
+.twitch{
+    height:720px;
+    width:1280px;
+}
+
+@media (max-width: 700px){
+    .twitch{
+        width: 400px;   
+        height: 360px;
+        border: none;
+    }
+
+    .container{
+        width: 100%
+    }
+}

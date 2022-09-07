@@ -31,13 +31,25 @@
     justify-content: space-between;
 }
 
+.modalContent{
+    display:block;
+}
+
 .foto{
-    display: inline-block;
+    display: block;
     margin: 30px 10px;
     border-radius: 5px;
     text-align: center;
+    width: 480px
 }
 
 .foto:hover{
     box-shadow: 0 0 20px #f9000040;
+}
+
+@media (max-width: 700px){
+    .foto{
+        width: 400px;    
+        margin: 30px 0
+    }
 }

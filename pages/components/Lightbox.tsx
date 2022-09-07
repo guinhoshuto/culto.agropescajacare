@@ -33,7 +33,7 @@ const Lightbox = ({images}: any) => {
             <div className={styles.row}>
                 {(images || []).map((image: any, index: number) => (
                     <div key={index} className={styles.foto}>
-                        <Image src={`https:${image.fields.file.url}`} alt="galeria" height={280} width={480} layout="fixed" onClick={() => {openModal();currentSlide(index)}} />
+                        <Image src={`https:${image.fields.file.url}`} alt="galeria" height={280} width={480} layout="responsive" onClick={() => {openModal();currentSlide(index)}} />
                     </div>
                 ))}
             </div>
@@ -42,7 +42,7 @@ const Lightbox = ({images}: any) => {
                 <div className={styles.modalContent}>
                     {(images || []).map((image: any, index: number) => (
                         <div className="slides" key={index}>
-                            <Image src={`https:${image.fields.file.url}`} alt="" width={1000} height={600}  />
+                            <Image src={`https:${image.fields.file.url}`} alt="" width={1000} height={600} layout="responsive"  />
                         </div>
                     ))}
 {/* 
