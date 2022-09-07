@@ -1,4 +1,6 @@
 .tweet{
+    display: flex;
+    flex-direction: row;
     border: 1px solid #fefefe;
     padding: 25px 40px;
     border-radius: 10px;
@@ -9,4 +11,24 @@
     z-index:2;
     box-sizing: border-box;
     line-height: 22px;
+}
+
+.tweetImage{
+    /* margin: 20px 15px; */
+    margin-left: 20px;
+    text-align: center;
+    width: 1200px;
+    height: auto;
+    /* height: 50px */
+}
+
+@media (max-width: 700px){
+    .tweet{ 
+        width: 90%; 
+        flex-direction: column; 
+    }
+    .tweetImage{ 
+        width: 300px;
+        margin: 25px auto 5px;
+    }
 }
