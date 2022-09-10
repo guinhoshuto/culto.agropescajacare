@@ -13,11 +13,16 @@
     line-height: 22px;
 }
 
+.tweetText{
+    padding-bottom: 40px
+}
+
 .tweetImage{
     /* margin: 20px 15px; */
     margin-left: 20px;
-    text-align: center;
-    width: 1200px;
+    text-align: right;
+    position: relative;
+    min-width: 400px;
     height: auto;
     /* height: 50px */
 }

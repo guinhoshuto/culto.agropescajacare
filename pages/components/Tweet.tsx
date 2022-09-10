@@ -9,7 +9,7 @@ const Tweet = ({tweet}: any) => {
                     <div className={styles.tweetText}>
                         {tweet.text} 
                     </div>
-                    {tweet.media_url && <div className={styles.tweetImage}><Image src={tweet.media_url} alt="" width={300} height={180} layout="responsive"/></div>}
+                    {tweet.media_url && <div className={styles.tweetImage}><Image src={tweet.media_url} alt="" layout={'fill'}  objectFit={'contain'}/></div>}
                 </div>
             }
         </a>
