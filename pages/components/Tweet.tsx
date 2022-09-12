@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 const Tweet = ({tweet}: any) => {
     return(
-        <a href={`https://twitter.com/guzcalp/status/${tweet ? tweet.id : ''}`}>
+        <a href={`https://twitter.com/guzcalp/status/${tweet ? tweet[3] : ''}`}>
             {tweet && 
                 <div className={styles.tweet}>
                     <div className={styles.tweetText}>
-                        {tweet.text} 
+                        {tweet[0]} 
                     </div>
-                    {tweet.media_url && <div className={styles.tweetImage}><Image src={tweet.media_url} alt="" layout={'fill'}  objectFit={'contain'}/></div>}
+                    {tweet[1] != "" && <div className={styles.tweetImage}><Image src={tweet[1]} alt="" layout={'fill'}  objectFit={'contain'}/></div>}
                 </div>
             }
         </a>

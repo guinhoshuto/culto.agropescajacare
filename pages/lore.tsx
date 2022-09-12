@@ -21,10 +21,10 @@ const Lore: NextPage = ({thread}: any) => {
 export default Lore
 
 export async function getServerSideProps(){
-    const res = await axios.get("https://culto.agropescajacare.com.br/api/twitter");
-    const arr = JSON.parse(JSON.stringify(res.data.thread));
+    const res = await axios.get("https://sheets.googleapis.com/v4/spreadsheets/1BpOT-nMqw4coSOtDcavmZwnp8obC8gYvr7BJZpWBESM/values/lore?alt=json&key=AIzaSyAagXtNh37OcuPc_eJiso-ylt00IMwAunc");
+    const arr = JSON.parse(JSON.stringify(res.data.values));
     console.log(arr)
-    arr.reverse()
+    // arr.reverse()
 
     return{
         props: {
